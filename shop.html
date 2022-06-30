@@ -24,6 +24,50 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 	<script src="jquery-3.5.1.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+window.dataLayer = window.dataLayer || [];
+
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  event: "view_item_list",
+  ecommerce: {
+    items: [
+     {
+      item_id: "SKU_12345",
+      item_name: "Stan and Friends Tee",
+      affiliation: "Google Merchandise Store",
+      coupon: "SUMMER_FUN",
+      currency: "USD",
+      discount: 2.22,
+      index: 0,
+      item_brand: "Google",
+      item_category: "Apparel",
+      item_variant: "green",
+      location_id: "L_12345",
+      price: 9.99,
+      quantity: 1
+    },
+    {
+      item_id: "SKU_12346",
+      item_name: "Google Grey Women's Tee",
+      affiliation: "Google Merchandise Store",
+      coupon: "SUMMER_FUN",
+      currency: "USD",
+      discount: 3.33,
+      index: 1,
+      item_brand: "Google",
+      item_category: "Apparel",
+      item_category2: "Adult",
+      item_variant: "gray",
+      location_id: "L_12345",
+      price: 20.99,
+      promotion_id: "P_12345",
+      promotion_name: "Summer Sale",
+      quantity: 1
+    }]
+  }
+});
+</script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
